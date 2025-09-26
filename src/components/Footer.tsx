@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-content">
           <div className="footer-copyright">
-            <p>&copy; 2025 Your Name. All rights reserved.</p>
+            <p>&copy; {currentYear} Your Name. All rights reserved.</p>
           </div>
           
           <div className="footer-social">
@@ -35,6 +35,15 @@ const Footer = () => {
           </div>
         </div>
         
+        <button 
+          className="scroll-to-top" 
+          onClick={scrollToTop}
+          aria-label="Scroll to top"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M18 15l-6-6-6 6"/>
+          </svg>
+        </button>
       </div>
     </footer>
   )
